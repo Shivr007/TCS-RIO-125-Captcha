@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #1f610b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .message-box {
+            width: 400px;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #00796b;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #00796b;
+            animation: pop 0.5s ease-in-out;
+        }
+        .message-box h1 {
+            margin: 0 0 15px;
+            font-size: 36px;
+            color: #00796b;
+        }
+        .message-box p {
+            margin: 0;
+            font-size: 20px;
+            color: #004d40;
+        }
+        .message-box .icon {
+            font-size: 50px;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+        .message-box .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #00796b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+        }
+        .message-box .button:hover {
+            background-color: #004d40;
+            transform: translateY(-3px);
+        }
+        .message-box .button:active {
+            background-color: #004d40;
+            transform: translateY(0);
+        }
+        @keyframes pop {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>&#x2705; Success!</h1>
+        <p>CAPTCHA Validation Successful!</p>
+        <a href="#" class="button">Continue</a>
+    </div>
+</body>
+</html>
